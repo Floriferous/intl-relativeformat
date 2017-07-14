@@ -1,3 +1,8 @@
+Custom Fork
+===================
+
+This fork removes all locales except the ones specified in the `/custom.js` file. It also doesn't require a special build branch to be used. simply npm install `https://github.xxx`.
+
 Intl RelativeFormat
 ===================
 

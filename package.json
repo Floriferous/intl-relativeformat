@@ -28,8 +28,6 @@
     "./lib/locales.js": false
   },
   "dependencies": {
-  },
-  "peerDependencies": {
     "intl-messageformat": "^2.0.0"
   },
   "devDependencies": {

@@ -205,7 +205,7 @@
     }
 
     $$compiler$$StringFormat.prototype.format = function (value) {
-        if (!value) {
+        if (!value && typeof value !== 'number') {
             return '';
         }
 
@@ -1904,9 +1904,6 @@
         };
     };
 
-    // Purposely using the same implementation as the Intl.js `Intl` polyfill.
-    // Copyright 2013 Andy Earnshaw, MIT License
-
     var $$es5$$hop = Object.prototype.hasOwnProperty;
     var $$es5$$toString = Object.prototype.toString;
 
@@ -1966,6 +1963,7 @@
     var $$es5$$dateNow = Date.now || function () {
         return new Date().getTime();
     };
+
     var $$core$$default = $$core$$RelativeFormat;
 
     // -----------------------------------------------------------------------------

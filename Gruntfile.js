@@ -1,3 +1,5 @@
+var locales = require('./custom.js').locales;
+
 module.exports = function (grunt) {
 
     var libpath = require('path');
@@ -37,6 +39,7 @@ module.exports = function (grunt) {
 
         extract_cldr_data: {
             options: {
+              locales: locales,
                 pluralRules   : true,
                 relativeFields: true,
             },
